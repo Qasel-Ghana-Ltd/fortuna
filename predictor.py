@@ -153,7 +153,7 @@ plt.style.use(style='ggplot')
 plt.figure(figsize=(16,10))
 plt.plot(copy_df['close'][-150:].head(147))
 plt.plot(copy_df['predicted_close'][-150:].head(147), linewidth=1, linestyle='dashed')
-plt.plot(copy_df['close'][-150:].tail(4))
+plt.plot(copy_df['close'][-150:].tail(3))
 plt.xlabel('days')
 plt.ylabel('price')
 plt.legend([f'Actual price for {STOCK}', 
