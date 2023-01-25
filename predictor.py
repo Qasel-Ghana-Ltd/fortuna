@@ -163,7 +163,7 @@ plt.show()
 
 
 if bool(predictions) == True and len(predictions) > 0:
-    predictions_list = [str(d)+'$' for d in predictions]
+    predictions_list = ['$'+str(d) for d in predictions]
     predictions_str = ', '.join(predictions_list)
     message = f'{STOCK} prediction for upcoming 3 days ({predictions_str})'
     
